@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/RScreen">
+        <file>img/close2.png</file>
+        <file>img/min2.png</file>
+        <file>img/recoding.ico</file>
+        <file>img/pressStartRecoding.png</file>
+        <file>img/startRecoding.png</file>
+        <file>img/stopRecoding.png</file>
+        <file>img/upload.ico</file>
+        <file>img/upLoad1.ico</file>
+        <file>img/cloud.png</file>
+        <file>img/cloud2.png</file>
+        <file>img/passwd.png</file>
+        <file>img/user.png</file>
+        <file>img/注册完成.png</file>
+        <file>img/back.png</file>
+    </qresource>
+</RCC>

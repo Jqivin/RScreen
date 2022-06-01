@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>login</class>
+ <widget class="QWidget" name="login">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>448</width>
+    <height>281</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>login</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>-10</y>
+     <width>431</width>
+     <height>291</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>10</y>
+      <width>311</width>
+      <height>281</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#ReturnLogin
+{
+	font: 9pt &quot;微软雅黑&quot;;
+	color: rgb(100, 100, 100);
+}
+#RokBtn
+{
+	color: rgb(226, 226, 226);
+	font: 9pt &quot;微软雅黑&quot;;
+	background-color: rgb(0,49, 83);
+ 	border:none;
+	border-radius: 6px;
+}
+#LoginBtn
+{
+	color: rgb(226, 226, 226);
+	font: 9pt &quot;微软雅黑&quot;;
+	background-color: rgb(0,49, 83);
+ 	border:none;
+	border-radius: 6px;
+}
+#RegisterBtn
+{
+	font: 9pt &quot;微软雅黑&quot;;
+	color: rgb(100, 100, 100);
+}
+#labelLogin
+{
+	color:rgb(0,49, 83);
+	font: 20pt &quot;华文琥珀&quot;;
+}
+#labelRegister
+{
+	color:rgb(0,49, 83);
+	font: 20pt &quot;华文琥珀&quot;;
+}</string>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="pageLogin">
+     <widget class="QWidget" name="widget_3" native="true">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>70</y>
+        <width>214</width>
+        <height>83</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#LlineEditPasswd
+{
+	border: 1px solid #A0A0A0; 
+	border-radius: 3px; 
+	padding-left: 10px; 
+	background-color: #F2F2F2; 
+	color: #282828;
+	selection-background-color: #A0A0A0;
+	selection-color: #F2F2F2; 
+	font-family: &quot;Microsoft YaHei&quot;;
+	font-size: 10pt; 
+}
+#LlineEditNum
+{
+	border: 1px solid #A0A0A0; 
+	border-radius: 3px; 
+	padding-left: 10px; 
+	background-color: #F2F2F2; 
+	color: #282828;
+	selection-background-color: #A0A0A0;
+	selection-color: #F2F2F2; 
+	font-family: &quot;Microsoft YaHei&quot;;
+	font-size: 10pt; 
+}
+#label_5
+{
+	font: 10pt &quot;微软雅黑&quot;;
+	background-image: url(:/RScreen/img/user.png);
+}
+#label_6
+{
+	font: 10pt &quot;微软雅黑&quot;;
+background-image: url(:/RScreen/img/passwd.png);
+}</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_5">
+         <property name="minimumSize">
+          <size>
+           <width>16</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="LlineEditNum">
+         <property name="placeholderText">
+          <string>请输入账号</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_6">
+         <property name="minimumSize">
+          <size>
+           <width>16</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="LlineEditPasswd">
+         <property name="echoMode">
+          <enum>QLineEdit::Password</enum>
+         </property>
+         <property name="placeholderText">
+          <string>请输入密码</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="LoginBtn">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>180</y>
+        <width>200</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>登录</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="RegisterBtn">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>220</y>
+        <width>71</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>注册 &gt;&gt;</string>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelLogin">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>10</y>
+        <width>81</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Login</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="pageRegister">
+     <property name="styleSheet">
+      <string notr="true">#label_4
+{
+	color: rgb(18, 150, 219);
+}</string>
+     </property>
+     <widget class="QWidget" name="widget_2" native="true">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>70</y>
+        <width>214</width>
+        <height>117</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">#RlineEditNumber
+{
+border: 1px solid #A0A0A0; /* 边框宽度为1px，颜色为#A0A0A0 */
+	border-radius: 3px; /* 边框圆角 */
+	padding-left: 10px; /* 文本距离左边界有5px */
+	background-color: #F2F2F2; /* 背景颜色 */
+	color: #282828; /* 文本颜色 */
+	selection-background-color: #A0A0A0; /* 选中文本的背景颜色 */
+	selection-color: #F2F2F2; /* 选中文本的颜色 */
+	font-family: &quot;Microsoft YaHei&quot;; /* 文本字体族 */
+	font-size: 10pt; /* 文本字体大小 */
+}
+#RlineEditPasswd
+{
+border: 1px solid #A0A0A0; 
+	border-radius: 3px; 
+	padding-left: 10px; 
+	background-color: #F2F2F2; 
+	color:#282828;
+	selection-background-color: #A0A0A0;
+	selection-color: #F2F2F2; 
+	font-family: &quot;Microsoft YaHei&quot;;
+	font-size: 10pt; 
+}
+#RlineEditPasswd2
+{
+	border: 1px solid #A0A0A0; 
+	border-radius: 3px; 
+	padding-left: 10px; 
+	background-color: #F2F2F2; 
+	color: #282828;
+	selection-background-color: #A0A0A0;
+	selection-color: #F2F2F2; 
+	font-family: &quot;Microsoft YaHei&quot;;
+	font-size: 10pt; 
+}
+#label
+{
+	font: 9pt &quot;微软雅黑&quot;;
+	
+	background-image: url(:/RScreen/img/user.png);
+}
+#label_2
+{
+	font: 9pt &quot;微软雅黑&quot;;
+	background-image: url(:/RScreen/img/passwd.png);
+}
+#label_3
+{
+	font: 9pt &quot;微软雅黑&quot;;
+	background-image: url(:/RScreen/img/passwd.png);
+}
+
+	</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label">
+         <property name="minimumSize">
+          <size>
+           <width>16</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="RlineEditNumber">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="placeholderText">
+          <string>请输入账号</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="label_2">
+         <property name="minimumSize">
+          <size>
+           <width>16</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="RlineEditPasswd">
+         <property name="echoMode">
+          <enum>QLineEdit::Password</enum>
+         </property>
+         <property name="placeholderText">
+          <string>请输入密码</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_3">
+         <property name="minimumSize">
+          <size>
+           <width>16</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="RlineEditPasswd2">
+         <property name="echoMode">
+          <enum>QLineEdit::Password</enum>
+         </property>
+         <property name="placeholderText">
+          <string>请确认密码</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="RokBtn">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>200</y>
+        <width>200</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>注册</string>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ReturnLogin">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>240</y>
+        <width>101</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;&lt; 返回登录</string>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelRegister">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>10</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Register</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="iconLabel_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>100</y>
+      <width>131</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/RScreen/img/注册完成.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="rscreen.qrc"/>
+ </resources>
+ <connections/>
+</ui>

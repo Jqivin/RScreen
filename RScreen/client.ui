@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>client</class>
+ <widget class="QWidget" name="client">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>540</width>
+    <height>350</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>client</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#back
+{
+background-color: rgb(80, 80, 80);
+border-radius:15px;
+}
+#all
+{
+background-color: rgb(90, 90, 90);
+}
+</string>
+  </property>
+  <widget class="QWidget" name="back" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>540</width>
+     <height>350</height>
+    </rect>
+   </property>
+   <widget class="QWidget" name="all" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>35</y>
+      <width>540</width>
+      <height>320</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#connect 
+{
+border-radius:5px;
+background-color: rgb(78, 78, 78);
+color: rgb(211, 211, 211);
+}
+
+#deleteFile
+{
+border-radius:5px;
+background-color: rgb(78, 78, 78);
+color: rgb(211, 211, 211);
+}
+#download
+{
+border-radius:5px;
+background-color: rgb(78, 78, 78);
+color: rgb(211, 211, 211);
+}
+#upLoad
+{
+border-radius:5px;
+background-color: rgb(78, 78, 78);
+color: rgb(211, 211, 211);
+}
+#ls
+{
+border-radius:5px;
+background-color: rgb(78, 78, 78);
+color: rgb(211, 211, 211);
+}
+#listWidget
+{
+border-radius:5px;
+background-color: rgb(78, 78, 78);
+color: rgb(211, 211, 211);
+}
+#upProgressBar
+{
+border-radius:8px;
+background-color: rgb(78, 78, 78);
+color: rgb(211, 211, 211);
+}
+#label
+{
+color: rgb(211, 211, 211);
+}
+#loginBtn
+{
+border-radius:15px;
+background-color: rgb(78, 78, 78);
+color: rgb(211, 211, 211);
+}
+</string>
+    </property>
+    <widget class="QListWidget" name="listWidget">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>50</y>
+       <width>351</width>
+       <height>190</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="deleteFile">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>196</y>
+       <width>93</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>删除文件</string>
+     </property>
+    </widget>
+    <widget class="QProgressBar" name="upProgressBar">
+     <property name="geometry">
+      <rect>
+       <x>25</x>
+       <y>260</y>
+       <width>481</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="value">
+      <number>0</number>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="download">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>102</y>
+       <width>93</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>下载文件</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ls">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>149</y>
+       <width>93</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>展示文件</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="upLoad">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>55</y>
+       <width>93</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>上传文件</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>155</x>
+       <y>25</y>
+       <width>72</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>文件列表</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="loginBtn">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>10</y>
+       <width>45</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>未登录</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="closeBtn">
+    <property name="geometry">
+     <rect>
+      <x>495</x>
+      <y>0</y>
+      <width>32</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/RScreen/img/close2.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="minBtn">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>0</y>
+      <width>32</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/RScreen/img/min2.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>2</y>
+      <width>32</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/RScreen/img/cloud.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>10</y>
+      <width>72</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 10pt &quot;微软雅黑&quot;;</string>
+    </property>
+    <property name="text">
+     <string>RCloud</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>closeBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>client</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>514</x>
+     <y>14</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>269</x>
+     <y>174</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>minBtn</sender>
+   <signal>clicked()</signal>
+   <receiver>client</receiver>
+   <slot>showMinimized()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>484</x>
+     <y>14</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>269</x>
+     <y>174</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
